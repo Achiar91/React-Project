@@ -5,6 +5,7 @@ import Favorites from './pages/Favorites';
 import MainNavigation from './components/layout/MainNavigation';
 function App() {
   return <div>
+    <MainNavigation />
     <Switch>
       <Route path='/' exact>
         <AllMeetupsPage />
@@ -16,7 +17,7 @@ function App() {
         <Favorites />
       </Route>
     </Switch>
-    <MainNavigation />
+    
   </div>;
 
 
