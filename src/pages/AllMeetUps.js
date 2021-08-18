@@ -18,7 +18,7 @@ function AllMeetupsPage() {
             const meetups = [];
             for (const key in data) {
                 const meetup = {
-                    id: key,
+                    id: key, // the key is the random generated id from firebase
                     ...data[key]
                 };
                 meetups.push(meetup) //transforms the data from the object from firebase  to an array
