@@ -14,10 +14,19 @@ const DUMMY_DATA = [
         id: 'm2',
         title: 'This is a second meetup',
         image:
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg',
-        address: 'Meetupstreet 5, 12345 Meetup City',
+            'https://london.ac.uk/sites/default/files/styles/max_1300x1300/public/2018-10/london-aerial-cityscape-river-thames_1.jpg?itok=6LenFxuz',
+        address: 'LONDON, WESTMINSTER',
         description:
-            'This is a first, amazing meetup which you definitely should not miss. It will be a lot of fun!',
+            'London is the capital and largest city of England and the United Kingdom. The city stands on the River Thames in southeast England',
+    },
+    {
+        id: 'm3',
+        title: 'This is a third meetup',
+        image:
+            'https://static.dw.com/image/43901161_303.jpg',
+        address: 'Berling,Germany',
+        description:
+            "One of Germany's sixteen constituent states, Berlin is surrounded by the State of Brandenburg and contiguous with Potsdam, Brandenburg's capital",
     },
 ];
 
@@ -27,11 +36,7 @@ function AllMeetupsPage() {
         <h1>All Meetups</h1>
         <MeetupList meetups={DUMMY_DATA} />
         
-        <ul>
-        {DUMMY_DATA.map((meetup) => {
-            return <li key={meetup.id}>{meetup.title}</li>
-        })}
-        </ul>
+        
         
     </section>
 }
